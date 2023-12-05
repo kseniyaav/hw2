@@ -1,0 +1,28 @@
+[
+  {
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+      "name": "Молоко",
+      "description": "Белый",
+      "photo_preview": "",
+      "category": "Продукты питания",
+      "piece_price": false,
+      "creation_date": "2023-12-05",
+      "update_date": null
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+      "name": "Стул",
+      "description": "Черный",
+      "photo_preview": "",
+      "category": "Интерьер",
+      "piece_price": false,
+      "creation_date": "2023-12-05",
+      "update_date": null
+    }
+  }
+]

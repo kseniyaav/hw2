@@ -1,0 +1,18 @@
+[
+  {
+    "model": "category.category",
+    "pk": 1,
+    "fields": {
+      "name": "Продукты питания",
+      "description": "Еда и напитки"
+    }
+  },
+  {
+    "model": "category.category",
+    "pk": 2,
+    "fields": {
+      "name": "Интерьер",
+      "description": "Все для дома"
+    }
+  }
+]
