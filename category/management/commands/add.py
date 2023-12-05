@@ -5,9 +5,10 @@ from category.models import Category
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
+        self.clear_database()
         category_list = [
-            {'name': 'Продукты питания', 'description': 'Еда и напитки'},
-            {'name': 'Интерьер', 'description': 'Все для дома'},
+            {'pk': '1', 'name': 'Продукты питания', 'description': 'Еда и напитки'},
+            {'pk': '2', 'name': 'Интерьер', 'description': 'Все для дома'},
         ]
 
         category_for_create = []
@@ -17,3 +18,6 @@ class Command(BaseCommand):
             )
 
         Category.objects.bulk_create(category_for_create)
+
+    def clear_database(self):
+        Category.objects.all().delete()
